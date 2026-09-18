@@ -33,7 +33,7 @@ jobs:
           rustflags: ""       # don't force -D warnings on the publish build
 
       - name: Install cargo-release
-        uses: taiki-e/install-action@v2.87.12 # v2
+        uses: taiki-e/install-action@v2.87.14 # v2
         with:
           tool: cargo-release
 
