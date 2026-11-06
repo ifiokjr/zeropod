@@ -26,14 +26,14 @@ jobs:
             || { echo "::error::tag ${GITHUB_REF_NAME} does not match Cargo.toml version v$v"; exit 1; }
 
       - name: Install Rust
-        uses: actions-rust-lang/setup-rust-toolchain@ecabd13d1c56bd1345c230e542e9144811ad706f # v2.0.0
+        uses: actions-rust-lang/setup-rust-toolchain@a188e68d0fd2bd36ad51dccb2b07ba6e75105f30 # v2.0.1
         with:
           toolchain: stable
           cache: false
           rustflags: ""       # don't force -D warnings on the publish build
 
       - name: Install cargo-release
-        uses: taiki-e/install-action@1919c4a95903d2c33e4a221102edca87309fc14b # v2.89.0
+        uses: taiki-e/install-action@c509219cf42fba86913069efd0ade2458c59337b # v2.90.1
         with:
           tool: cargo-release
 
